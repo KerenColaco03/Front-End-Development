@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Assignment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+  <header>
+
+    <div id="menuToggler">&#8801;</div>
+    <nav id="menu">
+      <a href="index.html">HOME</a>
+      <a href="movies.html">MOVIES</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="reviews.html">REVIEWS</a>
+    </nav>
+
+    <div>
+      <input type="checkbox" class="checkbox" id="lightMode" />
+      <label class="label" for="lightMode">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+        <i class="ball"></i>
+      </label>
+    </div>
+
+    <h1>Contact Us</h1>
+
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Please complete the form to contact us</h2>
+      <form id="contact">
+        <label for="myFirstName">First Name </label>
+        <input id="myFirstName" name="first name" placeholder="enter your first name" required>
+        <label for="myLastName">Last Name </label>
+        <input id="myLastName" name="last name" placeholder="enter your last name"  required>
+        <label for="myEmail">Email </label>
+        <input id="myEmail" placeholder="enter your email" required>
+        <label for="myMessage">Message </label>
+        <textarea id="myMessage" name="message" rows="5" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send">
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="main">
+      <article class="first box">
+        <h3>ABOUT US</h3>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet,
+            consectetur adipisicing
+            elit, sed do eiusmod tempor incididunt
+          </p>
+          <div class="socials">
+            <a href="#"><span class="fab fa-facebook-f"></span></a>
+            <a href="#"><span class="fab fa-twitter"></span></a>
+            <a href="#"><span class="fab fa-instagram"></span></a>
+            <a href="#"><span class="fab fa-youtube"></span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="second box">
+        <h4>ADDRESS</h4>
+        <div class="content">
+          <div class="place">
+            <span class="fas fa-map-marker-alt"></span>
+            <span class="text">The Gateway, London, HA1 0JW</span>
+          </div>
+          <div class="phone">
+            <span class="fas fa-phone-alt"></span>
+            <span class="text">020 9999 9999 </span>
+          </div>
+          <div class="email">
+            <span class="fas fa-envelope"></span>
+            <span class="text">info@gmail.com </span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </footer>
+
+  <div class="backToTop">
+    <i class="fas fa-arrow-circle-up"></i>
+  </div>
+
+  <script src="js/contact.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

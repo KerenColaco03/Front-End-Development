@@ -1,0 +1,114 @@
+/* applies to screens smaller than 500px (first breakpoint) */
+/* and above unless overwritten below */
+
+header{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/cinema.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+body.light .title h1{
+  color: white;
+}
+
+body.light h2{
+  color: black;
+}
+
+body.light header{
+  background-image: url(../images/cinema.jpg);
+}
+
+.title{
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.title p{
+  color: white;
+  text-align: center;
+  animation-name: moveToright;
+  animation-duration: 2s;
+}
+
+@keyframes moveToright {
+  0%{
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+main{
+  height: 75vh;
+}
+
+h2{
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  text-decoration: underline solid darkred;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  top: 1rem;
+  width: 86%;
+  margin: auto;
+  text-align: center;
+}
+
+#slider{
+  width: 85%;
+  height: 368px;
+  object-fit: contain;
+  background-color: black;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.9em;
+}
+
+img{
+  height: 70vh;
+  width: 80vw;
+}
+
+button:hover {
+  background: #282828;
+}
+
+/* TABLET STYLES */
+
+@media screen and (min-width: 500px) {
+
+  img{
+    width: auto;
+  }
+
+  button {
+    padding: 0 0.5em;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+
+  #slider{
+    width: 50%;
+  }
+}
+
+/* DESKTOP STYLES */
+
+@media screen and (min-width: 1000px) {
+}
+/* applies to screens wider than 999px */

@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500&display=swap');
+
+/* applies to screens smaller than 500px (first breakpoint) */
+/* and above unless overwritten below */
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  background-color: #000;
+}
+
+header{
+  position: relative;
+  overflow: hidden;
+}
+
+#menuToggler, nav{
+  background-color: rgba(0,0,0,0.9);
+}
+
+#menuToggler{
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: white;
+  font-size: 3.5em;
+  text-align: right;
+  line-height: 1.1em;
+  padding: 0 1.3rem;
+  z-index: 21;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateX(100vh) ;
+  justify-content: space-around;
+  z-index: 20;
+  align-items: center;
+  background-color: #660000;
+}
+
+nav.open{
+  transform: none;
+  opacity: 1;
+}
+
+nav a{
+  text-decoration: none;
+  padding: 0.5em 1em;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+nav a{
+  font-size: 1.6em;
+}
+
+nav a:hover{
+  background-color: darkred;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  top: 0.9rem;
+  left: 1rem;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.5);
+}
+
+.label .ball {
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+h1{
+ color: white;
+ font-family: Bowlby One SC;
+ font-size: 3.1em;
+ text-align: center;
+ animation-name: moveToLeft;
+ animation-duration: 2.5s;
+}
+
+@keyframes moveToLeft {
+  0%{
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+body.light {
+  background: white;
+}
+
+body.light nav {
+  background: black;
+}
+
+body.light nav a, nav{
+  color: white;
+}
+
+body.light h1{
+  color: black;
+}
+
+body.light .fa-arrow-circle-up {
+  color: darkred;
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+footer{
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+.main .box{
+  flex-basis: 50%;
+  padding: 10px 15px;
+}
+
+.box h3, h4{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.first .content p{
+  text-align: center;
+}
+
+.first .content .socials{
+  margin: 1rem 0 0 0
+}
+
+.first .content .socials a{
+  padding: 0.5rem;
+}
+
+.first .content .socials a span{
+  line-height: 1.1em;
+  text-align: center;
+  font-size: 2em;
+  transition: 0.3s;
+  color: white;
+}
+
+.first .content .socials a span:hover{
+  background: darkred;
+}
+
+.fa-arrow-circle-up {
+  color: white;
+}
+
+.backToTop{
+  font-size: 2.6rem;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  display: none;
+}
+
+.backToTop:hover{
+  background-color: darkgrey;
+}
+
+@media screen and (min-width: 500px) {
+
+  /* applies to screens wider than 499px */
+  #menuToggler {
+    display: none;
+  }
+
+  nav {
+    width:auto;
+    display: flex;
+    flex-direction: row;
+    transform: none;
+    opacity: 1;
+    height: auto;
+    position: static;
+  }
+}

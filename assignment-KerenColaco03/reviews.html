@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Assignment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reviews.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+  <header>
+
+    <div id="menuToggler">&#8801;</div>
+    <nav id="menu">
+      <a href="index.html">HOME</a>
+      <a href="movies.html">MOVIES</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="reviews.html">REVIEWS</a>
+    </nav>
+
+    <div>
+      <input type="checkbox" class="checkbox" id="lightMode" />
+      <label class="label" for="lightMode">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+        <i class="ball"></i>
+      </label>
+    </div>
+
+    <h1> Reviews</h1>
+
+  </header>
+
+  <main>
+    <section class="textbox">
+      <h2>Enter your cinema experiences </h2>
+      <textarea id="text" aria-label = "new review" placeholder="new review" rows="3"></textarea>
+      <button id="add">Add</button>
+    </section>
+
+    <ul id="reviews">
+
+      <li>
+        <span>Good place to spend movie nights</span>
+      </li>
+
+      <li>
+        <span>Good quality HD movies</span>
+      </li>
+
+      <li>
+        <span>Love it!!</span>
+      </li>
+
+    </ul>
+
+  </main>
+
+  <footer>
+    <div class="main">
+      <article class="first box">
+        <h3>ABOUT US</h3>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet,
+            consectetur adipisicing
+            elit, sed do eiusmod tempor incididunt
+          </p>
+          <div class="socials">
+            <a href="#"><span class="fab fa-facebook-f"></span></a>
+            <a href="#"><span class="fab fa-twitter"></span></a>
+            <a href="#"><span class="fab fa-instagram"></span></a>
+            <a href="#"><span class="fab fa-youtube"></span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="second box">
+        <h4>ADDRESS</h4>
+        <div class="content">
+          <div class="place">
+            <span class="fas fa-map-marker-alt"></span>
+            <span class="text">The Gateway, London, HA1 0JW</span>
+          </div>
+          <div class="phone">
+            <span class="fas fa-phone-alt"></span>
+            <span class="text">020 9999 9999 </span>
+          </div>
+          <div class="email">
+            <span class="fas fa-envelope"></span>
+            <span class="text">info@gmail.com </span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </footer>
+
+  <div class="backToTop">
+    <i class="fas fa-arrow-circle-up"></i>
+  </div>
+
+  <script src="js/reviews.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
